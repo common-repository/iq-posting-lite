@@ -1,0 +1,24 @@
+.iq-posting {
+    padding: 10px 15px;
+    border: 1px solid;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+    .iq-posting .iq-posting-link {
+        font-size: 1.1em;
+        text-transform: uppercase;
+    }
+
+    .iq-posting .iq-posting-source {
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        opacity: .5;
+        font-size: .7em;
+        text-transform: uppercase;
+    }
+
+    .iq-posting p:last-of-type {
+        margin-bottom: 0;
+    }

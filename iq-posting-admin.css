@@ -1,0 +1,203 @@
+#iq-posting-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+    #iq-posting-wrapper > div {
+        order: 2;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+    #iq-posting {
+        margin: 30px 20px 0 0;
+    }
+
+        .iq-posting-logo img {
+            max-width: 200px;
+        }
+
+        .iq-marketers span {
+        }
+
+        .iq-posting-news {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+        }
+
+        .iq-posting-news > li {
+            flex: 0 1 320px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 5px 30px 30px 0;
+            box-shadow: 0 3px 4px rgba(0,0,0,.2);
+        }
+
+            .iq-posting-news .feed-title a {
+                color: #000;
+                text-decoration: none;
+            }
+            .iq-posting-news .feed-description a {
+                color: #000;
+                text-decoration: none;
+                line-height: 1.7;
+            }
+            .iq-posting-news .feed-item-image {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .iq-posting-columns {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: stretch;
+                align-items: stretch;
+
+            }
+
+                .iq-posting-columns .piq-other {
+                    flex: 1 1 auto;
+                    align-self: auto;
+                }
+
+                .iq-posting-columns .piq-main-column {
+                    flex: 0 1 810px;
+                    align-self: auto;
+                    padding-right: 30px;
+                }
+
+                .iq-posting-columns .piq-video {
+                    flex: 0 1 350px;
+                    padding: 15px;
+                    align-self: flex-end;
+                }
+
+                    .iq-posting-columns .piq-video h3 span {
+                        color: #3f98b3;
+                        font-size: 18px;
+                    }
+
+                    .iq-posting-columns .iq-help-video {
+                        position: relative;
+                        padding-bottom: 56.25%; /* 16:9 */
+                        padding-top: 25px;
+                        height: 0;
+                    }
+
+                        .iq-posting-columns .iq-help-video iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+        .iq-newsletter {
+            background: #3F98B3;
+            color: #fff;
+            padding: 15px 20px;
+            display: block;
+            margin: 20px 0;
+        }
+
+            .iq-newsletter h3 {
+                color: #fff;
+                margin: 0;
+            }
+
+            .iq-newsletter .iq-fields {
+                padding: 10px 15px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 100%;
+                max-width: 300px;
+                min-width: 150px;
+                margin: 10px 0;
+            }
+
+                .iq-newsletter .iq-fields:focus {
+                    border-color: #db3f2e;
+                }
+
+
+            #iq-posting-wrapper > #iq-posting .iq-button {
+                vertical-align: middle;
+                background: #db3f2e;
+                color: #fff;
+                border: 0;
+                font-size: 18px;
+                padding: 10px 40px;
+                border-radius: 100px;
+                transition: all .15s;
+                cursor: pointer;
+                margin: 10px 0;
+                text-decoration: none;
+            }
+
+                #iq-posting-wrapper > #iq-posting .iq-button:hover {
+                    background: #fea800;
+                }
+
+            .iq-newsletter label {
+                max-width: 550px;
+                display: inline-block;
+            }
+
+    #license.no-license {
+    }
+
+        #license.no-license .notice-warning.notice-alt {
+            background-color: #fbeaea;
+        }
+        #license.no-license .notice-warning {
+            border-left-color: #dc3232;
+        }
+
+#iq-upgrade {
+    margin: 30px 0;
+}
+
+    #iq-upgrade .iq-button {
+        display: inline-block;
+        margin-right: 20px !important;
+        vertical-align: middle !important;
+    }
+
+    #iq-upgrade .iq-upgrade-benefits {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 550px;
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+
+.iqposting-dashboard {
+    margin: 12px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+
+}
+.iqposting-dashboard li p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.more_from_iq {
+    float: right;
+    font-size: 11px;
+    color: #999;
+    text-decoration: none;
+    font-style: italic;
+    line-height: 30px;
+}

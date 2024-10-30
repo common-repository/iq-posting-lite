@@ -1,0 +1,92 @@
+@import 'iq-posting-editor.css';
+
+body.no-scroll {
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.iq-posting {
+    cursor: pointer;
+}
+
+.iq-posting > p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.popup-iq-iframe {
+    position: fixed;
+    z-index: 9999999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    max-height: 80%;
+    box-shadow: 0 0 30px rgba(0,0,0,.6);
+    background: #000;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+}
+
+.popup-iq-iframe::after {
+    content: 'Loading...';
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-iq-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.popup-iq-overlay::after {
+    position: absolute;
+    content: '\00d7';
+    color: #000;
+    z-index: 9999999;
+    width: 5%;
+    min-width: 50px;
+    height: auto;
+    top: 30px;
+    right: 0;
+    font-size: 80px;
+    font-family: Arial, Helevetica, sans-serif;
+    line-height: 1;
+    font-weight: bold;
+    display: block;
+    transition: all .15s;
+    text-shadow: 0 0 10px rgba(0,0,0,.6);
+    opacity: .7;
+}
+
+@media (max-width: 480px) {
+    .popup-iq-overlay::after {
+        top: 5px;
+        right: 5px;
+        font-size: 40px;
+        text-align: right;
+    }
+}
+
+.popup-iq-overlay:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .2);
+}
+
+.popup-iq-iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
